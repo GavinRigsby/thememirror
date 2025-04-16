@@ -67,6 +67,13 @@ const createTheme = ({variant, settings, styles}: Options): Extension => {
 		{
 			// eslint-disable-next-line @typescript-eslint/naming-convention
 			'&': {
+				'--cm-background': settings.background,
+				'--cm-caret': settings.caret,
+				'--cm-foreground': settings.foreground,
+				'--cm-gutterBackground': settings.gutterBackground,
+				'--cm-gutterForeground': settings.gutterForeground,
+				'--cm-lineHighlight': settings.lineHighlight,
+				'--cm-selection': settings.selection,
 				backgroundColor: settings.background,
 				color: settings.foreground,
 			},
